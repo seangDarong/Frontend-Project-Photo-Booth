@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFEAE3;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+.WelcomePage-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    text-align: center;
+}
+
+.box{
+    width: 840px;
+    height: 676px;
+    margin-top: 50px;
+}
+
+.WelcomePage-container img {
+    width: 600px;
+    height: auto;
+    
+}
+
+.WelcomePage-container h3 {
+    font-weight:500;
+    opacity: 70%;
+}
+
+
+.WelcomePage-container h1 {
+    font-weight: bold;
+}
+
+.WelcomePage-container  button {
+    background-color: #EC7FA9;
+    border-radius: 50px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.button-conatiner{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+/* instruction page  */
+
+.instructionPage_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.instructionPage_container h4{
+    opacity: 70%;
+}
+
+.instructionPage_container button {
+    background-color: #EC7FA9;
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    font-size:20px;
+    font-weight: bold;
+    margin-top: 50px;
+}

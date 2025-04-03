@@ -51,7 +51,7 @@ button{
 
 }
 
-.button-conatiner{
+.button-container{
     display: flex;
     justify-content: center;
     gap: 80px;
@@ -83,3 +83,125 @@ button{
     font-weight: bold;
     margin-top: 50px;
 }
+
+/* photobooth */
+
+.photoBooth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything horizontally */
+    justify-content: center; /* Center everything vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
+
+.camera-section {
+    display: flex;
+    justify-content: center; /* Center the camera horizontally */
+    align-items: center; /* Center the camera vertically */
+    width: 100%;
+    margin-bottom: 20px; /* Add some space between the camera and the captured images */
+}
+
+.pic-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px); /* Create 4 columns, each 100px wide */
+    gap: 10px; /* Add spacing between images */
+    justify-content: center; /* Center the grid horizontally */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.pic-container img {
+    width: 100%; /* Make images fill their grid cells */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the grid cell without distortion */ 
+}
+
+
+/* capturedImage */
+
+.photoBooth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Desktop style */
+    width: 100vw; /* Desktop style */
+}
+
+.camera-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pic-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px); /* Desktop style */
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.pic-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .photoBooth-container {
+        height: auto; /* Allow container to grow with content */
+        padding: 20px; /* Add padding for mobile */
+    }
+
+    .pic-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+        gap: 5px; /* Reduce gap for smaller screens */
+    }
+
+    .pic-container img {
+        border-radius: 8px; /* Optional: Add border radius for mobile */
+    }
+}
+
+.capture-button{
+    background-color: #EC7FA9;
+    border-radius: 50px;
+    border: none;
+    width: 100px;
+    height:45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* camera */
+
+.video-container {
+
+  }
+  
+  .video-container > video {
+    height: 400px; /* Desktop style */
+    border-radius: 20px;
+  }
+  
+  .video {
+    transform: scaleX(-1);
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timer {
+    text-align: center;
+  }
+  

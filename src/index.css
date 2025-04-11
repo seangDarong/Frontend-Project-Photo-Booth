@@ -178,6 +178,18 @@ button{
     font-weight: bold;
 }
 
+.next-button{
+    background-color: #EC7FA9;
+    border-radius: 50px;
+    border: none;
+    width: 100px;
+    height:45px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
 
 
 /* camera */
@@ -205,3 +217,5 @@ button{
     text-align: center;
   }
   
+/* upload  */
+

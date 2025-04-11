@@ -12,7 +12,7 @@ const PhotoBooth = () => {
     };
 
     const handleNext = () => {
-        // Navigate to the editing page and pass the captured images as state
+        
         navigate("/Styling", { state: { images: capturedImages } });
     };
 
@@ -24,7 +24,7 @@ const PhotoBooth = () => {
             <div className="pic-container">
                 <CapturedImages images={capturedImages} />
             </div>
-            <button onClick={handleNext} disabled={capturedImages.length < 4} className="capture-button">
+            <button onClick={handleNext} disabled={capturedImages.length < 4} className="next-button">
                 Next
             </button>
         </div>
